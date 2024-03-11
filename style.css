@@ -8,6 +8,10 @@ body {
     background-color: #ecfccb;
 }
 
+button:focus {
+    outline: none;
+}
+
 .container {
     display: flex;
     flex-direction: column;
