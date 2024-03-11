@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Library</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>
+                    Hello,<br />
+                    Welcome to your Library
+                </h1>
+                <button id="add">add new book</button>
+            </div>
+            <div class="book-list">
+                <div id="number-header">#</div>
+                <div id="title-header">Title</div>
+                <div id="author-header">Author</div>
+                <div id="pages-header">Pages</div>
+                <div id="read-header">Read</div>
+            </div>
+            <dialog>
+                <div class="form">
+                    <form action="" method="dialog">
+                        <div class="title-input">
+                            <label for="title" class="label"
+                                >Title Of Book</label
+                            >
+                            <input type="text" id="title" name="title" />
+                        </div>
+                        <div class="autour-input">
+                            <label for="author" class="label"
+                                >Author Of Book</label
+                            >
+                            <input type="text" id="author" name="author" />
+                        </div>
+                        <div class="pages-input">
+                            <label for="Pages" class="label"
+                                >Number Of Pages Of Book</label
+                            >
+                            <input type="number" id="Pages" name="Pages" />
+                        </div>
+                        <div class="title-input">
+                            <label for="read" class="label"
+                                >Did you read this book?</label
+                            >
+                            <div class="yesOrNo">
+                                <div id="yes">YES</div>
+                                <div id="no">NO</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="buttons">
+                    <button id="add-the-book">Add</button>
+                    <button autofocus id="close-dialog">close</button>
+                </div>
+            </dialog>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
