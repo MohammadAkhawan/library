@@ -49,8 +49,9 @@ button:focus {
     background-color: #65a30d;
 }
 
-.book-list {
+.book-list-header {
     margin: 0 auto;
+    margin-top: -1px;
     width: 800px;
     display: grid;
     grid-template-columns: 1fr repeat(2, 3fr) repeat(2, 2fr);
@@ -60,10 +61,20 @@ button:focus {
     padding: 15px 10px;
 }
 
-.book-list > div {
+.book-list-header > div {
+    /* margin-bottom: 20px; */
     padding-bottom: 10px;
     border-bottom: 0.5px solid #ecfccb;
     font-weight: 600;
+}
+
+.book-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-book {
+    display: flex;
 }
 
 dialog {
@@ -136,29 +147,39 @@ input:focus {
     padding-right: 50px;
 }
 
-#no,
-#yes {
+.no,
+.yes {
     padding: 10px 30px;
     border-radius: 20px;
     cursor: pointer;
     color: gray;
 }
 
-#no {
+.no {
     background-color: #fecaca;
 }
 
-#no:hover {
+.no:hover {
     background-color: #dc2626;
     color: white;
 }
 
-#yes {
+.no-toggle {
+    background-color: #dc2626;
+    color: white;
+}
+
+.yes {
     background-color: #d9f99d;
 }
 
-#yes:hover {
-    background-color: #84cc16;
+.yes:hover {
+    background-color: #65a30d;
+    color: white;
+}
+
+.yes-toggle {
+    background-color: #65a30d;
     color: white;
 }
 

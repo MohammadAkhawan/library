@@ -16,11 +16,13 @@
                 <button id="add">add new book</button>
             </div>
             <div class="book-list">
-                <div id="number-header">#</div>
-                <div id="title-header">Title</div>
-                <div id="author-header">Author</div>
-                <div id="pages-header">Pages</div>
-                <div id="read-header">Read</div>
+                <div class="book-list-header">
+                    <div id="number-header">#</div>
+                    <div id="title-header">Title</div>
+                    <div id="author-header">Author</div>
+                    <div id="pages-header">Pages</div>
+                    <div id="read-header">Read</div>
+                </div>
             </div>
             <dialog>
                 <div class="form">
@@ -38,18 +40,18 @@
                             <input type="text" id="author" name="author" />
                         </div>
                         <div class="pages-input">
-                            <label for="Pages" class="label"
+                            <label for="pages" class="label"
                                 >Number Of Pages Of Book</label
                             >
-                            <input type="number" id="Pages" name="Pages" />
+                            <input type="number" id="pages" name="pages" />
                         </div>
                         <div class="title-input">
                             <label for="read" class="label"
                                 >Did you read this book?</label
                             >
                             <div class="yesOrNo">
-                                <div id="yes">YES</div>
-                                <div id="no">NO</div>
+                                <div class="yes">YES</div>
+                                <div class="no">NO</div>
                             </div>
                         </div>
                     </form>
